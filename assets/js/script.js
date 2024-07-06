@@ -182,7 +182,7 @@ $(document).ready(function () {
                     // let jsonRes = JSON.parse(response);
                     // Handle success response
                     if (response.emailStatus) {
-                        $(form).find('.formResponse').html(`<p class="alert alert-success mb-0 p-2 mt-1">Thanks for your message, we'll be with you soon!</p>`);
+                        $(form).find('.formResponse').html(`<p class="alert alert-success mb-0 p-2 mt-1">Thanks for registering, we'll be with you soon!</p>`);
                         $(form).trigger('reset');
                         $(form).find('.btn,.submit').val('Send Message');
                     }

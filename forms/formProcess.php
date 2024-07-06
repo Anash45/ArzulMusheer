@@ -11,11 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = $_POST['subject'];
         $message = $_POST['message'];
 
-        $headers = "From: Contact Us - 10 Park Drive <webmaster@arzulmusheer.com>" . "\r\n";
+        $headers = "From: Register <webmaster@arzulmusheer.com>" . "\r\n";
 
         $tContent = '<thead>
                 <tr>
-                    <th colspa="2">10 Park Drive - Contact Us</th>
+                    <th colspan="2">10 Park Drive - Contact Us</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = "Register - Arzul Musheer";
 
         // Prepare the email headers (optional, for further processing)
-        $headers = "From: Register Form <webmaster@arzulmusheer.com>" . "\r\n";
+        $headers = "From: Register <webmaster@arzulmusheer.com>" . "\r\n";
 
         // Create the HTML table content
         $tContent = '<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
@@ -143,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ';
 
     // Send email using mail() function
-    $to = "info@arzulmusheer.com";
+    $to = "info@arzulmusheer.com,futuretest45@gmail.com";
     $message = $html;
     $headers .= "CC: futuretest45@gmail.com";
     $headers .= "MIME-Version: 1.0" . "\r\n";

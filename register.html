@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>10 Park Drive</title>
+        <link rel="shortcut icon" href="./assets/images/ArzulMusheerPNG_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/css/blueimp-gallery.min.css"
+            integrity="sha512-8z9zEPEYVxCX7hdM+6hA0RMSW42V+XtqsyXSbNkujXYclFqhRV8J4+MasIpuYZODoHJuQgxGjcRKm//sWEQm6w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+            integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <header class="d-flex flex-column gap-3 position-relative">
+            <a href="register.html" class="btn btn-register"><span>Register</span></a>
+            <div class="text-center pb-2 pt-3 header-top">
+                <a href="./index.html" class="d-flex flex-column align-items-center mx-auto">
+                    <img src="./assets/images/10ParkDrivelogoFinal.png" alt="Logo" class="h-logo">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg position-static py-lg-1 py-0 navbar-light bg-light">
+                <div class="container-fluid position-static">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./location.html">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./floor-plans.html">Floor Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="contact-sec py-5">
+                <div class="container">
+                    <h2 class="text-center title-md mb-sm-5 mb-4" data-aos="fade-up" data-aos-duration="1500">Registration</h2>
+                    <p class="mb-5 text-dark" data-aos="fade-up" data-aos-duration="1500">Register To Speak With One Of Our Sales Executive.</p>
+                    <form action="./forms/formProcess.php" method="post" class="registerForm">
+                        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="col-md-6 mb-5">
+                                <input type="text" name="first_name" id="first_name" class="form-control"
+                                    placeholder="First Name*">
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <input type="text" name="last_name" id="last_name" class="form-control"
+                                    placeholder="Last Name*">
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="col-md-6 mb-5">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email*">
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <input type="tel" name="phone" id="phone" class="form-control"
+                                    placeholder="Phone Number*">
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="col-md-6 mb-5">
+                                <select type="text" name="working_with_realtor" id="working_with_realtor"
+                                    class="form-control">
+                                    <option value="" disabled selected>Are you working with a realtor</option>
+                                    <option value="Yes">I am working with a realtor</option>
+                                    <option value="No">I am not working with a realtor</option>
+                                    <option value="Realtor Myself">I am a realtor</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <input type="text" name="brokerage" id="brokerage" class="form-control"
+                                    placeholder="Agent Name">
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="col-md-6 mb-5">
+                                <label class="d-block">Preferred contact method</label>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="contact-call" name="contact_method[]" value="call">
+                                        <label class="form-check-label" for="contact-call">Call</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="contact-text" name="contact_method[]" value="text">
+                                        <label class="form-check-label" for="contact-text">Text</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="contact-email"
+                                            name="contact_method[]" value="email">
+                                        <label class="form-check-label" for="contact-email">Email</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="contact-whatsapp"
+                                            name="contact_method[]" value="whatsapp">
+                                        <label class="form-check-label" for="contact-whatsapp">WhatsApp</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <select type="text" name="interested_in" id="interested_in" class="form-control">
+                                    <option value="" disabled="" selected="">I am interested in...</option>
+                                    <option value="1 Bedroom">1 Bedroom</option>
+                                    <option value="2 Bedroom">2 Bedroom</option>
+                                    <option value="3 Bedroom">3 Bedroom</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="col-md-6 mb-5">
+                                <select type="text" name="heard_about_us" id="heard_about_us" class="form-control">
+                                    <option value="" disabled="" selected="">How did you hear about us?</option>
+                                    <option value="Direct Mail">Direct Mail</option>
+                                    <option value="E-Mail">E-Mail</option>
+                                    <option value="Magazine / Newspaper">Magazine / Newspaper</option>
+                                    <option value="Online Advertisement (Facebook ads, Google ads, etc)">Online
+                                        Advertisement (Facebook ads, Google ads, etc)</option>
+                                    <option value="Radio / TV">Radio / TV</option>
+                                    <option value="Referral">Referral</option>
+                                    <option value="Signage">Signage</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Special Events">Special Events</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12"><button type="submit" class="btn btn-submit">Register</button></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="py-5">
+            <div class="container py-5">
+                <div
+                    class="d-flex justify-content-between flex-sm-row flex-column gap-4 align-items-center text-sm-start text-center">
+                    <div class="f-1">
+                        <div class="f-logo">
+                            <img src="./assets/images/ArzulMusheerPNG_logo.png" alt="Footer Logo" class="img-fluid">
+                        </div>
+                        <h6 class="mt-2 mb-1 fw-bold text-dark f-whitney">Arzul Musheer</h6>
+                        <address class="fw-medium my-1"> 10 Park Drive, Emaar, <br> DHA Islamabad, Pakistan </address>
+                        <p class="my-1">
+                            <a href="#" class="fw-medium">UAN: 0304 111 5030</a>
+                        </p>
+                        <p class="my-1">
+                            <a href="#" class="fw-medium">W: arzulmusheer.com</a>
+                        </p>
+                    </div>
+                    <div class="f-2">
+                        <h5 class="mb-3 c-red fw-semibold f-whitney">Links</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a class="text-decoration-underline" href="index.html">Home</a></li>
+                            <li><a class="text-decoration-underline" href="location.html">Location</a></li>
+                            <li><a class="text-decoration-underline" href="floor-plans.html">Floor Plans</a></li>
+                            <li><a class="text-decoration-underline" href="gallery.html">Gallery</a></li>
+                            <li><a class="text-decoration-underline" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="f-2">
+                        <div class="mb-4">
+                            <h5 class="mb-3 c-red fw-semibold f-whitney">Hours</h5>
+                            <p class="fw-medium"> Monday - Friday: 10AM - 7PM <br> Saturday & Sunday: 11AM - 5PM </p>
+                        </div>
+                        <div class="mb-0">
+                            <h5 class="mb-3 c-red fw-semibold f-whitney">Follow Us</h5>
+                            <div
+                                class="d-flex align-items-center gap-3 justify-content-sm-start justify-content-center">
+                                <a href="https://www.facebook.com/share/cejSBwAC4aTkUJqq/?mibextid=qi2Omg" target="_blank" class="f-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/company/arzul-musheer-private-limited/" target="_blank" class="f-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/10parkdriveemaar?igsh=MWxrYTdkOW43bWl4cw==" target="_blank" class="f-social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="loadingio">
+            <div class="loading-inner">
+                <div></div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/blueimp-gallery.min.js"
+        integrity="sha512-Tt9Ui0O6Sg6FjAK5XpAIM7PCMhaXCL+i13IHLZYuluoDXlesfg+JzVI86rgUU2YnfEz2ZEDHXkRkPnHlyWnqzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</html>

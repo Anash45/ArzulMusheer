@@ -199,6 +199,11 @@
         window.onload = function () {
             $('#masonry-gallery').masonry();
         };
+        $('.gallery-item').each(function () {
+            $(this).on('click', function () {
+                $('#masonry-gallery').masonry();
+            })
+        })
     </script>
     <script src="./assets/js/script.js"></script>
 

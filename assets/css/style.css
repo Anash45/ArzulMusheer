@@ -316,6 +316,13 @@ footer a:hover {
     color: #FFFFFF;
 }
 
+.sec-brochure{
+    background-color: #4a4b4f;
+}
+
+.sec-brochure .btn-submit{
+    border-color: #FFFFFF !important;
+}
 .btn-submit:hover {
     background-color: rgb(119, 119, 121) !important;
 }
